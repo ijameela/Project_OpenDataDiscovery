@@ -1,0 +1,849 @@
+2025-05-20 04:12:00.723 [info] [main] Log level: Info
+2025-05-20 04:12:00.723 [info] [main] Validating found git in: "git"
+2025-05-20 04:12:00.723 [info] [main] Using git "2.43.0" from "git"
+2025-05-20 04:12:00.723 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [48ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [4ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 04:12:00.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:12:00.723 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 04:12:00.723 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2025-05-20 04:12:00.723 [info] [Model][openRepository] Opened repository (path): /home/azureuser/odd-platform
+2025-05-20 04:12:00.723 [info] [Model][openRepository] Opened repository (real path): /home/azureuser/odd-platform
+2025-05-20 04:12:00.723 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-20 04:12:00.723 [info] > git config --get commit.template [6ms]
+2025-05-20 04:12:00.723 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 04:12:00.723 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:12:00.723 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-20 04:12:00.723 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [40ms]
+2025-05-20 04:12:00.963 [info] > git status -z -uall [322ms]
+2025-05-20 04:12:01.017 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-05-20 04:12:01.024 [info] > git config --get commit.template [7ms]
+2025-05-20 04:12:01.024 [info] > git config --get --local branch.main.vscode-merge-base [3ms]
+2025-05-20 04:12:01.035 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [6ms]
+2025-05-20 04:12:01.041 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2025-05-20 04:12:01.045 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:12:01.046 [info] > git merge-base refs/heads/main refs/remotes/origin/main [7ms]
+2025-05-20 04:12:01.050 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2025-05-20 04:12:01.065 [info] > git diff --name-status -z --diff-filter=ADMR f363b2aebd8c362882fbd02dd04cf20fd64f7dfa...refs/remotes/origin/main [16ms]
+2025-05-20 04:12:01.072 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 04:12:01.199 [info] > git fetch [596ms]
+2025-05-20 04:12:01.208 [info] > git status -z -uall [154ms] (cancelled)
+2025-05-20 04:12:01.212 [info] > git config --get commit.template [5ms]
+2025-05-20 04:12:01.222 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-05-20 04:12:01.226 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:12:01.227 [info] > git check-ignore -v -z --stdin [7ms]
+2025-05-20 04:12:01.229 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-20 04:12:01.252 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-05-20 04:12:01.374 [info] > git status -z -uall [140ms]
+2025-05-20 04:12:02.833 [info] > git config --get commit.template [16ms]
+2025-05-20 04:12:02.839 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:12:02.842 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:12:02.844 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:12:02.863 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:12:02.983 [info] > git status -z -uall [134ms]
+2025-05-20 04:19:12.318 [info] > git fetch [501ms]
+2025-05-20 04:19:12.328 [info] > git config --get commit.template [4ms]
+2025-05-20 04:19:12.329 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 04:19:12.331 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:19:12.333 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:19:12.354 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-05-20 04:19:12.478 [info] > git status -z -uall [143ms]
+2025-05-20 04:21:55.010 [info] > git config --get commit.template [4ms]
+2025-05-20 04:21:55.011 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:21:55.013 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:21:55.015 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:21:55.030 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 04:21:55.150 [info] > git status -z -uall [133ms]
+2025-05-20 04:22:12.985 [info] > git fetch [499ms]
+2025-05-20 04:22:12.994 [info] > git config --get commit.template [4ms]
+2025-05-20 04:22:12.995 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:22:12.998 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:22:12.999 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:22:13.018 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 04:22:13.155 [info] > git status -z -uall [153ms]
+2025-05-20 04:22:14.370 [info] > git config --get commit.template [5ms]
+2025-05-20 04:22:14.371 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:22:14.375 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:22:14.376 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:22:14.393 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 04:22:14.508 [info] > git status -z -uall [129ms]
+2025-05-20 04:31:25.083 [info] > git fetch [489ms]
+2025-05-20 04:31:25.092 [info] > git config --get commit.template [4ms]
+2025-05-20 04:31:25.093 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:31:25.097 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:31:25.099 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:31:25.124 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2025-05-20 04:31:25.238 [info] > git status -z -uall [136ms]
+2025-05-20 04:31:26.494 [info] > git config --get commit.template [4ms]
+2025-05-20 04:31:26.496 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 04:31:26.498 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:31:26.499 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:31:26.519 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:31:26.638 [info] > git status -z -uall [134ms]
+2025-05-20 04:35:32.527 [info] > git fetch [474ms]
+2025-05-20 04:35:32.535 [info] > git config --get commit.template [4ms]
+2025-05-20 04:35:32.537 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 04:35:32.541 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:35:32.543 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:35:32.562 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 04:35:32.680 [info] > git status -z -uall [133ms]
+2025-05-20 04:35:33.934 [info] > git config --get commit.template [4ms]
+2025-05-20 04:35:33.936 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 04:35:33.938 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:35:33.940 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:35:33.961 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 04:35:34.090 [info] > git status -z -uall [145ms]
+2025-05-20 04:35:34.615 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 04:35:34.615 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 04:39:12.707 [info] > git fetch [494ms]
+2025-05-20 04:39:12.714 [info] > git config --get commit.template [4ms]
+2025-05-20 04:39:12.716 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:39:12.718 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:39:12.719 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:39:12.734 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 04:39:12.852 [info] > git status -z -uall [130ms]
+2025-05-20 04:39:14.125 [info] > git config --get commit.template [3ms]
+2025-05-20 04:39:14.126 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:39:14.128 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:39:14.130 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:39:14.148 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 04:39:14.277 [info] > git status -z -uall [145ms]
+2025-05-20 04:43:41.160 [info] > git fetch [490ms]
+2025-05-20 04:43:41.169 [info] > git config --get commit.template [4ms]
+2025-05-20 04:43:41.170 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:43:41.172 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:43:41.174 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:43:41.197 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2025-05-20 04:43:41.319 [info] > git status -z -uall [143ms]
+2025-05-20 04:43:42.561 [info] > git config --get commit.template [4ms]
+2025-05-20 04:43:42.562 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:43:42.565 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:43:42.566 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:43:42.581 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:43:42.697 [info] > git status -z -uall [128ms]
+2025-05-20 04:47:21.892 [info] > git fetch [512ms]
+2025-05-20 04:47:21.900 [info] > git config --get commit.template [4ms]
+2025-05-20 04:47:21.901 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:47:21.904 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:47:21.907 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-20 04:47:21.930 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [12ms]
+2025-05-20 04:47:22.065 [info] > git status -z -uall [156ms]
+2025-05-20 04:47:23.295 [info] > git config --get commit.template [4ms]
+2025-05-20 04:47:23.297 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:47:23.299 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:47:23.301 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 04:47:23.318 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:47:23.450 [info] > git status -z -uall [146ms]
+2025-05-20 04:52:42.555 [info] > git fetch [495ms]
+2025-05-20 04:52:42.560 [info] > git config --get commit.template [2ms]
+2025-05-20 04:52:42.564 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:52:42.567 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:52:42.568 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:52:42.584 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:52:42.726 [info] > git status -z -uall [155ms]
+2025-05-20 04:54:10.932 [info] > git config --get commit.template [4ms]
+2025-05-20 04:54:10.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:54:10.935 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:54:10.937 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:54:10.952 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 04:54:11.069 [info] > git status -z -uall [130ms]
+2025-05-20 04:56:05.122 [info] > git fetch [491ms]
+2025-05-20 04:56:05.130 [info] > git config --get commit.template [4ms]
+2025-05-20 04:56:05.132 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:56:05.135 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:56:05.136 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:56:05.158 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 04:56:05.286 [info] > git status -z -uall [145ms]
+2025-05-20 04:56:06.523 [info] > git config --get commit.template [4ms]
+2025-05-20 04:56:06.524 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 04:56:06.527 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 04:56:06.528 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 04:56:06.543 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 04:56:06.672 [info] > git status -z -uall [142ms]
+2025-05-20 04:56:07.232 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 04:56:07.232 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 05:41:13.531 [info] > git rev-parse --show-toplevel [6ms]
+2025-05-20 05:41:13.531 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 05:41:13.958 [info] > git fetch [561ms]
+2025-05-20 05:41:13.966 [info] > git config --get commit.template [4ms]
+2025-05-20 05:41:13.967 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 05:41:13.970 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:41:13.971 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 05:41:13.990 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 05:41:14.110 [info] > git status -z -uall [136ms]
+2025-05-20 05:41:15.351 [info] > git config --get commit.template [5ms]
+2025-05-20 05:41:15.352 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 05:41:15.357 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:41:15.360 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-20 05:41:15.380 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 05:41:15.504 [info] > git status -z -uall [139ms]
+2025-05-20 05:44:14.626 [info] > git fetch [507ms]
+2025-05-20 05:44:14.634 [info] > git config --get commit.template [2ms]
+2025-05-20 05:44:14.642 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 05:44:14.648 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:44:14.650 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 05:44:14.668 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 05:44:14.793 [info] > git status -z -uall [139ms]
+2025-05-20 05:44:16.023 [info] > git config --get commit.template [1ms]
+2025-05-20 05:44:16.027 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 05:44:16.030 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:44:16.031 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 05:44:16.049 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 05:44:16.174 [info] > git status -z -uall [139ms]
+2025-05-20 05:47:15.603 [info] > git fetch [474ms]
+2025-05-20 05:47:15.611 [info] > git config --get commit.template [4ms]
+2025-05-20 05:47:15.613 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 05:47:15.615 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:47:15.617 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 05:47:15.635 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 05:47:15.750 [info] > git status -z -uall [131ms]
+2025-05-20 05:47:16.984 [info] > git config --get commit.template [5ms]
+2025-05-20 05:47:16.985 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 05:47:16.988 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:47:16.989 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 05:47:17.005 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 05:47:17.128 [info] > git status -z -uall [136ms]
+2025-05-20 05:50:16.266 [info] > git fetch [509ms]
+2025-05-20 05:50:16.276 [info] > git config --get commit.template [5ms]
+2025-05-20 05:50:16.278 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 05:50:16.281 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:50:16.282 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 05:50:16.299 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 05:50:16.419 [info] > git status -z -uall [134ms]
+2025-05-20 05:50:17.665 [info] > git config --get commit.template [4ms]
+2025-05-20 05:50:17.666 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-20 05:50:17.669 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 05:50:17.671 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 05:50:17.685 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 05:50:17.805 [info] > git status -z -uall [132ms]
+2025-05-20 05:51:48.358 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-20 05:51:48.358 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 06:17:33.325 [info] > git fetch [521ms]
+2025-05-20 06:17:33.332 [info] > git config --get commit.template [4ms]
+2025-05-20 06:17:33.333 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:17:33.335 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:17:33.337 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 06:17:33.353 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 06:17:33.466 [info] > git status -z -uall [127ms]
+2025-05-20 06:18:05.483 [info] > git config --get commit.template [4ms]
+2025-05-20 06:18:05.485 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:18:05.488 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:18:05.489 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 06:18:05.506 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 06:18:05.639 [info] > git status -z -uall [146ms]
+2025-05-20 06:29:37.930 [info] > git fetch [500ms]
+2025-05-20 06:29:37.939 [info] > git config --get commit.template [4ms]
+2025-05-20 06:29:37.940 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:29:37.943 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:29:37.944 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 06:29:37.961 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 06:29:38.089 [info] > git status -z -uall [141ms]
+2025-05-20 06:29:39.330 [info] > git config --get commit.template [4ms]
+2025-05-20 06:29:39.332 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:29:39.335 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:29:39.336 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 06:29:39.352 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 06:29:39.470 [info] > git status -z -uall [130ms]
+2025-05-20 06:31:49.169 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 06:31:49.170 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 06:32:38.647 [info] > git fetch [541ms]
+2025-05-20 06:32:38.661 [info] > git config --get commit.template [6ms]
+2025-05-20 06:32:38.663 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 06:32:38.668 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:32:38.670 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 06:32:38.707 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [25ms]
+2025-05-20 06:32:38.925 [info] > git status -z -uall [251ms]
+2025-05-20 06:32:40.076 [info] > git config --get commit.template [7ms]
+2025-05-20 06:32:40.078 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 06:32:40.083 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:32:40.087 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2025-05-20 06:32:40.119 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [13ms]
+2025-05-20 06:32:40.349 [info] > git status -z -uall [257ms]
+2025-05-20 06:47:09.089 [info] > git fetch [532ms]
+2025-05-20 06:47:09.096 [info] > git config --get commit.template [4ms]
+2025-05-20 06:47:09.097 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:47:09.099 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:47:09.100 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 06:47:09.115 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 06:47:09.238 [info] > git status -z -uall [136ms]
+2025-05-20 06:47:10.425 [info] > git config --get commit.template [4ms]
+2025-05-20 06:47:10.427 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:47:10.429 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:47:10.432 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 06:47:10.454 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 06:47:10.576 [info] > git status -z -uall [140ms]
+2025-05-20 06:47:30.604 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 06:47:30.604 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 06:48:42.593 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 06:48:42.593 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 06:50:09.733 [info] > git fetch [488ms]
+2025-05-20 06:50:09.742 [info] > git config --get commit.template [4ms]
+2025-05-20 06:50:09.743 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:50:09.746 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:50:09.747 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 06:50:09.764 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 06:50:09.883 [info] > git status -z -uall [133ms]
+2025-05-20 06:50:11.108 [info] > git config --get commit.template [6ms]
+2025-05-20 06:50:11.109 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 06:50:11.112 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:50:11.114 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 06:50:11.129 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 06:50:11.254 [info] > git status -z -uall [138ms]
+2025-05-20 06:57:40.855 [info] > git fetch [477ms]
+2025-05-20 06:57:40.861 [info] > git config --get commit.template [1ms]
+2025-05-20 06:57:40.864 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-20 06:57:40.866 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 06:57:40.868 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 06:57:40.882 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 06:57:41.008 [info] > git status -z -uall [138ms]
+2025-05-20 07:08:07.884 [info] > git config --get commit.template [7ms]
+2025-05-20 07:08:07.885 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 07:08:07.889 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:08:07.890 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:08:07.906 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 07:08:08.078 [info] > git status -z -uall [186ms]
+2025-05-20 07:08:08.463 [info] > git fetch [593ms]
+2025-05-20 07:08:08.473 [info] > git config --get commit.template [5ms]
+2025-05-20 07:08:08.474 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:08:08.477 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:08:08.478 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:08:08.494 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:08:08.606 [info] > git status -z -uall [125ms]
+2025-05-20 07:08:13.090 [info] > git config --get commit.template [4ms]
+2025-05-20 07:08:13.092 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 07:08:13.094 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:08:13.095 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 07:08:13.111 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:08:13.227 [info] > git status -z -uall [129ms]
+2025-05-20 07:12:15.645 [info] > git fetch [531ms]
+2025-05-20 07:12:15.651 [info] > git config --get commit.template [3ms]
+2025-05-20 07:12:15.656 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:12:15.661 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:12:15.663 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:12:15.679 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 07:12:15.801 [info] > git status -z -uall [135ms]
+2025-05-20 07:12:16.973 [info] > git config --get commit.template [4ms]
+2025-05-20 07:12:16.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:12:16.977 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:12:16.979 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:12:16.994 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 07:12:17.119 [info] > git status -z -uall [138ms]
+2025-05-20 07:20:22.282 [info] > git fetch [482ms]
+2025-05-20 07:20:22.289 [info] > git config --get commit.template [2ms]
+2025-05-20 07:20:22.294 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:20:22.297 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:20:22.299 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:20:22.313 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:20:22.461 [info] > git status -z -uall [159ms]
+2025-05-20 07:20:23.677 [info] > git config --get commit.template [2ms]
+2025-05-20 07:20:23.683 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 07:20:23.686 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:20:23.689 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:20:23.709 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 07:20:23.841 [info] > git status -z -uall [148ms]
+2025-05-20 07:23:50.954 [info] > git fetch [512ms]
+2025-05-20 07:23:50.959 [info] > git config --get commit.template [1ms]
+2025-05-20 07:23:50.964 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:23:50.966 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:23:50.967 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 07:23:50.981 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 07:23:51.100 [info] > git status -z -uall [130ms]
+2025-05-20 07:23:52.331 [info] > git config --get commit.template [5ms]
+2025-05-20 07:23:52.332 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:23:52.335 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:23:52.337 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:23:52.351 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 07:23:52.474 [info] > git status -z -uall [135ms]
+2025-05-20 07:28:44.638 [info] > git fetch [498ms]
+2025-05-20 07:28:44.646 [info] > git config --get commit.template [4ms]
+2025-05-20 07:28:44.647 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:28:44.649 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:28:44.651 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:28:44.665 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 07:28:44.778 [info] > git status -z -uall [125ms]
+2025-05-20 07:31:45.730 [info] > git config --get commit.template [2ms]
+2025-05-20 07:31:45.737 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:31:45.740 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:31:45.742 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:31:45.766 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 07:31:45.926 [info] > git status -z -uall [181ms]
+2025-05-20 07:31:46.310 [info] > git fetch [588ms]
+2025-05-20 07:31:46.317 [info] > git config --get commit.template [4ms]
+2025-05-20 07:31:46.318 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:31:46.320 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:31:46.322 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:31:46.338 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 07:31:46.467 [info] > git status -z -uall [143ms]
+2025-05-20 07:31:50.937 [info] > git config --get commit.template [4ms]
+2025-05-20 07:31:50.938 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:31:50.940 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:31:50.941 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 07:31:50.956 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 07:31:51.086 [info] > git status -z -uall [142ms]
+2025-05-20 07:31:57.856 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:31:57.856 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:32:09.495 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 07:32:09.495 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:38:16.197 [info] > git fetch [515ms]
+2025-05-20 07:38:16.205 [info] > git config --get commit.template [4ms]
+2025-05-20 07:38:16.206 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:38:16.208 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:38:16.209 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 07:38:16.225 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:38:16.358 [info] > git status -z -uall [147ms]
+2025-05-20 07:38:17.578 [info] > git config --get commit.template [5ms]
+2025-05-20 07:38:17.579 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:38:17.582 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 07:38:17.584 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 07:38:17.601 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:38:17.722 [info] > git status -z -uall [135ms]
+2025-05-20 08:20:15.515 [info] > git fetch [466ms]
+2025-05-20 08:20:15.523 [info] > git config --get commit.template [5ms]
+2025-05-20 08:20:15.524 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:20:15.528 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:20:15.529 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:20:15.546 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 08:20:15.663 [info] > git status -z -uall [131ms]
+2025-05-20 08:20:16.902 [info] > git config --get commit.template [2ms]
+2025-05-20 08:20:16.906 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-20 08:20:16.908 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:20:16.910 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:20:16.924 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:20:17.044 [info] > git status -z -uall [132ms]
+2025-05-20 08:24:52.772 [info] > git fetch [547ms]
+2025-05-20 08:24:52.782 [info] > git config --get commit.template [3ms]
+2025-05-20 08:24:52.789 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 08:24:52.793 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:24:52.794 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:24:52.828 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2025-05-20 08:24:53.036 [info] > git status -z -uall [238ms]
+2025-05-20 08:24:54.092 [info] > git config --get commit.template [2ms]
+2025-05-20 08:24:54.097 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:24:54.100 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:24:54.101 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:24:54.121 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 08:24:54.241 [info] > git status -z -uall [135ms]
+2025-05-20 08:33:30.639 [info] > git fetch [521ms]
+2025-05-20 08:33:30.646 [info] > git config --get commit.template [3ms]
+2025-05-20 08:33:30.648 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 08:33:30.650 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:33:30.652 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:33:30.671 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-05-20 08:33:30.790 [info] > git status -z -uall [135ms]
+2025-05-20 08:33:32.068 [info] > git config --get commit.template [4ms]
+2025-05-20 08:33:32.073 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:33:32.075 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:33:32.076 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:33:32.093 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 08:33:32.227 [info] > git status -z -uall [148ms]
+2025-05-20 08:33:55.956 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 08:33:55.960 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-05-20 08:33:55.978 [info] [Model][openRepository] Opened repository (path): /home/azureuser/nginx/letsencrypt
+2025-05-20 08:33:55.978 [info] [Model][openRepository] Opened repository (real path): /home/azureuser/nginx/letsencrypt
+2025-05-20 08:33:55.985 [info] > git fetch [8ms]
+2025-05-20 08:33:55.990 [info] > git config --get commit.template [6ms]
+2025-05-20 08:33:55.991 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:33:55.994 [info] > git config --get commit.template [4ms]
+2025-05-20 08:33:55.997 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:33:55.998 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-05-20 08:33:55.998 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:33:56.008 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-05-20 08:33:56.008 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:33:56.008 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-05-20 08:33:56.009 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2025-05-20 08:33:56.009 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:33:56.013 [info] > git config --get commit.template [5ms]
+2025-05-20 08:33:56.017 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:33:56.018 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:33:56.018 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:33:56.026 [info] > git status -z -uall [5ms]
+2025-05-20 08:33:56.027 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 08:33:56.738 [info] > git check-ignore -v -z --stdin [4ms]
+2025-05-20 08:33:56.740 [info] > git check-ignore -v -z --stdin [3ms]
+2025-05-20 08:33:57.385 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:33:57.386 [info] > git config --get commit.template [4ms]
+2025-05-20 08:33:57.387 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:33:57.387 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:33:57.396 [info] > git status -z -uall [5ms]
+2025-05-20 08:33:57.397 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:36:50.364 [info] > git fetch [522ms]
+2025-05-20 08:36:50.372 [info] > git config --get commit.template [4ms]
+2025-05-20 08:36:50.373 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:36:50.376 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:36:50.377 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:36:50.393 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:36:50.510 [info] > git status -z -uall [130ms]
+2025-05-20 08:36:51.760 [info] > git config --get commit.template [5ms]
+2025-05-20 08:36:51.761 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:36:51.763 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:36:51.765 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:36:51.781 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-05-20 08:36:51.906 [info] > git status -z -uall [139ms]
+2025-05-20 08:36:56.020 [info] > git fetch [4ms]
+2025-05-20 08:36:56.025 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:36:56.028 [info] > git config --get commit.template [4ms]
+2025-05-20 08:36:56.029 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:36:56.029 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:36:56.035 [info] > git status -z -uall [4ms]
+2025-05-20 08:36:56.038 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:36:57.338 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:36:57.338 [info] > git config --get commit.template [4ms]
+2025-05-20 08:36:57.339 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:36:57.339 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:36:57.349 [info] > git status -z -uall [7ms]
+2025-05-20 08:36:57.349 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:39:51.006 [info] > git fetch [490ms]
+2025-05-20 08:39:51.015 [info] > git config --get commit.template [5ms]
+2025-05-20 08:39:51.016 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:39:51.018 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:39:51.020 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:39:51.036 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 08:39:51.155 [info] > git status -z -uall [132ms]
+2025-05-20 08:39:52.399 [info] > git config --get commit.template [5ms]
+2025-05-20 08:39:52.400 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:39:52.403 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:39:52.404 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:39:52.423 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:39:52.542 [info] > git status -z -uall [134ms]
+2025-05-20 08:39:56.048 [info] > git fetch [5ms]
+2025-05-20 08:39:56.055 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:39:56.055 [info] > git config --get commit.template [4ms]
+2025-05-20 08:39:56.056 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:39:56.056 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:39:56.066 [info] > git status -z -uall [7ms]
+2025-05-20 08:39:56.068 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:39:57.438 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:39:57.444 [info] > git config --get commit.template [8ms]
+2025-05-20 08:39:57.446 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-05-20 08:39:57.446 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:39:57.454 [info] > git status -z -uall [5ms]
+2025-05-20 08:39:57.456 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:52:26.062 [info] > git fetch [8ms]
+2025-05-20 08:52:26.073 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:52:26.074 [info] > git config --get commit.template [5ms]
+2025-05-20 08:52:26.075 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:52:26.075 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:52:26.085 [info] > git status -z -uall [6ms]
+2025-05-20 08:52:26.088 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-05-20 08:52:26.547 [info] > git fetch [499ms]
+2025-05-20 08:52:26.555 [info] > git config --get commit.template [4ms]
+2025-05-20 08:52:26.556 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:52:26.559 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:52:26.560 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:52:26.576 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:52:26.694 [info] > git status -z -uall [132ms]
+2025-05-20 08:52:27.448 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:52:27.448 [info] > git config --get commit.template [4ms]
+2025-05-20 08:52:27.449 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:52:27.449 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:52:27.458 [info] > git status -z -uall [5ms]
+2025-05-20 08:52:27.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 08:52:27.933 [info] > git config --get commit.template [4ms]
+2025-05-20 08:52:27.934 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:52:27.936 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:52:27.938 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:52:27.952 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-05-20 08:52:28.073 [info] > git status -z -uall [133ms]
+2025-05-20 08:56:33.524 [info] > git fetch [6ms]
+2025-05-20 08:56:33.531 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:56:33.531 [info] > git config --get commit.template [2ms]
+2025-05-20 08:56:33.537 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:56:33.537 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:56:33.544 [info] > git status -z -uall [4ms]
+2025-05-20 08:56:33.545 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:56:34.047 [info] > git fetch [524ms]
+2025-05-20 08:56:34.054 [info] > git config --get commit.template [3ms]
+2025-05-20 08:56:34.056 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:56:34.058 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:56:34.059 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-20 08:56:34.083 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-05-20 08:56:34.205 [info] > git status -z -uall [143ms]
+2025-05-20 08:56:34.905 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:56:34.905 [info] > git config --get commit.template [3ms]
+2025-05-20 08:56:34.906 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:56:34.906 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:56:34.912 [info] > git status -z -uall [4ms]
+2025-05-20 08:56:34.914 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 08:56:35.438 [info] > git config --get commit.template [3ms]
+2025-05-20 08:56:35.439 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 08:56:35.441 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:56:35.443 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:56:35.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-20 08:56:35.576 [info] > git status -z -uall [131ms]
+2025-05-20 08:59:14.213 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 08:59:14.217 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-05-20 08:59:14.225 [info] [Model][openRepository] Opened repository (path): /home/azureuser
+2025-05-20 08:59:14.225 [info] [Model][openRepository] Opened repository (real path): /home/azureuser
+2025-05-20 08:59:14.236 [info] > git config --get commit.template [3ms]
+2025-05-20 08:59:14.236 [info] > git fetch [11ms]
+2025-05-20 08:59:14.243 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:14.244 [info] > git config --get commit.template [3ms]
+2025-05-20 08:59:14.248 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:14.249 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2025-05-20 08:59:14.249 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:14.258 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-05-20 08:59:14.259 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:14.259 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-05-20 08:59:14.260 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2025-05-20 08:59:14.260 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:14.262 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:14.264 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:14.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:14.266 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:14.277 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 08:59:14.293 [info] > git status -z -uall [23ms]
+2025-05-20 08:59:15.467 [info] > git check-ignore -v -z --stdin [11ms]
+2025-05-20 08:59:15.468 [info] > git check-ignore -v -z --stdin [7ms]
+2025-05-20 08:59:15.469 [info] > git check-ignore -v -z --stdin [4ms]
+2025-05-20 08:59:22.983 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:22.984 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:22.985 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:22.985 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:22.995 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 08:59:23.006 [info] > git status -z -uall [19ms]
+2025-05-20 08:59:28.077 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:28.089 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:28.093 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-05-20 08:59:28.093 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:28.126 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-05-20 08:59:28.163 [info] > git status -z -uall [58ms]
+2025-05-20 08:59:33.275 [info] > git config --get commit.template [8ms]
+2025-05-20 08:59:33.280 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:33.282 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:33.282 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:33.303 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 08:59:33.318 [info] > git status -z -uall [31ms]
+2025-05-20 08:59:34.079 [info] > git fetch [25ms]
+2025-05-20 08:59:34.104 [info] > git config --get commit.template [10ms]
+2025-05-20 08:59:34.108 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:34.118 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2025-05-20 08:59:34.118 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:34.139 [info] > git status -z -uall [11ms]
+2025-05-20 08:59:34.139 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:59:34.725 [info] > git fetch [513ms]
+2025-05-20 08:59:34.734 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:34.736 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 08:59:34.738 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:59:34.740 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-20 08:59:34.760 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:59:34.881 [info] > git status -z -uall [138ms]
+2025-05-20 08:59:35.545 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:35.546 [info] > git config --get commit.template [5ms]
+2025-05-20 08:59:35.546 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 08:59:35.547 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:35.554 [info] > git status -z -uall [5ms]
+2025-05-20 08:59:35.555 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:59:36.116 [info] > git config --get commit.template [5ms]
+2025-05-20 08:59:36.118 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 08:59:36.123 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 08:59:36.127 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2025-05-20 08:59:36.146 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-05-20 08:59:36.262 [info] > git status -z -uall [130ms]
+2025-05-20 08:59:38.369 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:38.369 [info] > git config --get commit.template [5ms]
+2025-05-20 08:59:38.370 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:38.370 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:38.381 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:59:38.393 [info] > git status -z -uall [20ms]
+2025-05-20 08:59:43.424 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:43.425 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:43.426 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:43.426 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:43.437 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:59:43.449 [info] > git status -z -uall [20ms]
+2025-05-20 08:59:48.484 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 08:59:48.485 [info] > git config --get commit.template [4ms]
+2025-05-20 08:59:48.486 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 08:59:48.486 [warning] [Git][getBranch] No such branch: master
+2025-05-20 08:59:48.496 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 08:59:48.510 [info] > git status -z -uall [21ms]
+2025-05-20 09:01:23.833 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:01:23.833 [info] > git config --get commit.template [4ms]
+2025-05-20 09:01:23.834 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:01:23.834 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:01:23.842 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:01:23.852 [info] > git status -z -uall [16ms]
+2025-05-20 09:01:33.423 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:01:33.424 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-05-20 09:01:33.426 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:01:33.427 [info] > git config --get commit.template [17ms]
+2025-05-20 09:01:33.446 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 09:01:33.475 [info] > git status -z -uall [43ms]
+2025-05-20 09:01:38.564 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:01:38.568 [info] > git config --get commit.template [5ms]
+2025-05-20 09:01:38.569 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:01:38.569 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:01:38.579 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 09:01:38.591 [info] > git status -z -uall [19ms]
+2025-05-20 09:01:47.234 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:01:47.235 [info] > git config --get commit.template [4ms]
+2025-05-20 09:01:47.235 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:01:47.235 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:01:47.246 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 09:01:47.259 [info] > git status -z -uall [21ms]
+2025-05-20 09:01:56.460 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:01:56.460 [info] > git config --get commit.template [4ms]
+2025-05-20 09:01:56.461 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:01:56.461 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:01:56.471 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:01:56.488 [info] > git status -z -uall [23ms]
+2025-05-20 09:02:08.181 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:02:08.182 [info] > git config --get commit.template [5ms]
+2025-05-20 09:02:08.182 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:02:08.183 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:02:08.193 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:02:08.203 [info] > git status -z -uall [18ms]
+2025-05-20 09:02:11.957 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:02:11.958 [info] > git config --get commit.template [4ms]
+2025-05-20 09:02:11.958 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:02:11.959 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:02:11.979 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:02:12.145 [info] > git status -z -uall [174ms]
+2025-05-20 09:02:13.240 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:02:13.241 [info] > git config --get commit.template [5ms]
+2025-05-20 09:02:13.242 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:02:13.242 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:02:13.258 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-05-20 09:02:13.394 [info] > git status -z -uall [148ms]
+2025-05-20 09:02:13.982 [info] > git show --textconv HEAD:nginx/conf/default.conf [481ms]
+2025-05-20 09:02:13.983 [info] > git ls-tree -l HEAD -- nginx/conf/default.conf [476ms]
+2025-05-20 09:02:13.983 [info] fatal: Not a valid object name HEAD
+2025-05-20 09:02:14.000 [info] > git hash-object -t tree /dev/null [7ms]
+2025-05-20 09:02:14.001 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/azureuser/nginx/letsencrypt/nginx/conf/default.conf.git?%7B%22path%22%3A%22%2Fhome%2Fazureuser%2Fnginx%2Fletsencrypt%2Fnginx%2Fconf%2Fdefault.conf%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 09:02:14.003 [info] > git hash-object -t tree /dev/null [15ms]
+2025-05-20 09:02:14.003 [warning] [GitFileSystemProvider][stat] File not found - git:/home/azureuser/nginx/letsencrypt/nginx/conf/default.conf.git?%7B%22path%22%3A%22%2Fhome%2Fazureuser%2Fnginx%2Fletsencrypt%2Fnginx%2Fconf%2Fdefault.conf%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 09:02:14.270 [info] > git fetch [4ms]
+2025-05-20 09:02:14.278 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:02:14.279 [info] > git config --get commit.template [5ms]
+2025-05-20 09:02:14.279 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:02:14.279 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:02:14.294 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:02:14.445 [info] > git status -z -uall [160ms]
+2025-05-20 09:02:19.351 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:02:19.351 [info] > git config --get commit.template [5ms]
+2025-05-20 09:02:19.352 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:02:19.352 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:02:19.363 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:02:19.510 [info] > git status -z -uall [155ms]
+2025-05-20 09:03:40.714 [info] > git fetch [15ms]
+2025-05-20 09:03:40.722 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/home/azureuser/nginx/letsencrypt/.git/HEAD'
+2025-05-20 09:03:40.732 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/azureuser/nginx/letsencrypt/.git/config'
+2025-05-20 09:03:40.746 [info] > git config --get commit.template [31ms]
+2025-05-20 09:03:40.748 [info] > git remote --verbose [16ms]
+2025-05-20 09:03:40.749 [info] > git symbolic-ref --short HEAD [27ms]
+2025-05-20 09:03:40.761 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:03:40.761 [info] > git config --get commit.template [16ms]
+2025-05-20 09:03:40.764 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2025-05-20 09:03:40.765 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:03:40.812 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 09:03:40.819 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [59ms]
+2025-05-20 09:03:40.819 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:03:40.899 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 09:03:41.439 [info] > git status -z -uall [660ms]
+2025-05-20 09:03:42.438 [info] > git status -z -uall [1597ms]
+2025-05-20 09:03:42.438 [info] > git fetch [1732ms]
+2025-05-20 09:03:42.544 [info] > git config --get commit.template [82ms]
+2025-05-20 09:03:42.557 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-05-20 09:03:42.570 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/azureuser/odd-platform/.git/refs/remotes/origin/main'
+2025-05-20 09:03:42.573 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-05-20 09:03:43.074 [info] > git status -z -uall [494ms]
+2025-05-20 09:03:43.074 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [486ms]
+2025-05-20 09:03:43.751 [info] > git show --textconv :nginx/conf/default.conf [13ms]
+2025-05-20 09:03:43.751 [info] > git show --textconv HEAD:nginx/conf/default.conf [9ms]
+2025-05-20 09:03:43.751 [info] > git ls-files --stage -- nginx/conf/default.conf [6ms]
+2025-05-20 09:03:43.755 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/azureuser/nginx/letsencrypt/nginx/conf/default.conf.git?%7B%22path%22%3A%22%2Fhome%2Fazureuser%2Fnginx%2Fletsencrypt%2Fnginx%2Fconf%2Fdefault.conf%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 09:03:43.756 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/azureuser/nginx/letsencrypt/nginx/conf/default.conf.git?%7B%22path%22%3A%22%2Fhome%2Fazureuser%2Fnginx%2Fletsencrypt%2Fnginx%2Fconf%2Fdefault.conf%22%2C%22ref%22%3A%22%22%7D
+2025-05-20 09:03:43.757 [info] > git cat-file -s 62dbe2d0f7a4c178eb758ba21a3dc01bc0f78392 [3ms]
+2025-05-20 09:03:43.757 [info] > git ls-tree -l HEAD -- nginx/conf/default.conf [8ms]
+2025-05-20 09:03:43.757 [info] fatal: Not a valid object name HEAD
+2025-05-20 09:03:43.758 [warning] [GitFileSystemProvider][stat] File not found - git:/home/azureuser/nginx/letsencrypt/nginx/conf/default.conf.git?%7B%22path%22%3A%22%2Fhome%2Fazureuser%2Fnginx%2Fletsencrypt%2Fnginx%2Fconf%2Fdefault.conf%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 09:03:46.227 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-20 09:04:18.805 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:18.806 [info] > git config --get commit.template [5ms]
+2025-05-20 09:04:18.807 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:04:18.807 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:18.818 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:04:18.969 [info] > git status -z -uall [159ms]
+2025-05-20 09:04:34.446 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:34.449 [info] > git config --get commit.template [4ms]
+2025-05-20 09:04:34.450 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:04:34.450 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:34.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:04:34.602 [info] > git status -z -uall [148ms]
+2025-05-20 09:04:39.670 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:39.671 [info] > git config --get commit.template [6ms]
+2025-05-20 09:04:39.671 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:04:39.671 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:39.682 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:04:39.826 [info] > git status -z -uall [153ms]
+2025-05-20 09:04:43.232 [info] > git check-ignore -v -z --stdin [4ms]
+2025-05-20 09:04:44.889 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:44.890 [info] > git config --get commit.template [7ms]
+2025-05-20 09:04:44.891 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-05-20 09:04:44.892 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:44.922 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 09:04:45.212 [info] > git status -z -uall [312ms]
+2025-05-20 09:04:50.271 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:50.272 [info] > git config --get commit.template [5ms]
+2025-05-20 09:04:50.272 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 09:04:50.272 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:50.282 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:04:50.424 [info] > git status -z -uall [149ms]
+2025-05-20 09:04:55.472 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:04:55.472 [info] > git config --get commit.template [5ms]
+2025-05-20 09:04:55.473 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:04:55.473 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:04:55.488 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:04:55.637 [info] > git status -z -uall [161ms]
+2025-05-20 09:05:01.209 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:01.210 [info] > git config --get commit.template [5ms]
+2025-05-20 09:05:01.211 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:05:01.211 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:01.221 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:05:01.367 [info] > git status -z -uall [153ms]
+2025-05-20 09:05:17.295 [info] > git fetch [7ms]
+2025-05-20 09:05:17.301 [info] > git config --get commit.template [8ms]
+2025-05-20 09:05:17.305 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:17.306 [info] > git config --get commit.template [6ms]
+2025-05-20 09:05:17.309 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:17.310 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2025-05-20 09:05:17.310 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:17.313 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-05-20 09:05:17.313 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:17.326 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:05:17.465 [info] > git status -z -uall [148ms]
+2025-05-20 09:05:22.323 [info] > git config --get commit.template [2ms]
+2025-05-20 09:05:22.328 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:22.329 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-05-20 09:05:22.329 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:22.341 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 09:05:22.355 [info] > git status -z -uall [22ms]
+2025-05-20 09:05:32.026 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:32.027 [info] > git config --get commit.template [5ms]
+2025-05-20 09:05:32.028 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:05:32.028 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:32.039 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 09:05:32.053 [info] > git status -z -uall [21ms]
+2025-05-20 09:05:37.096 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:37.105 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-05-20 09:05:37.105 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:37.105 [info] > git config --get commit.template [14ms]
+2025-05-20 09:05:37.141 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 09:05:37.179 [info] > git status -z -uall [52ms]
+2025-05-20 09:05:42.234 [info] > git config --get commit.template [2ms]
+2025-05-20 09:05:42.239 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 09:05:42.241 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 09:05:42.241 [warning] [Git][getBranch] No such branch: master
+2025-05-20 09:05:42.255 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-05-20 09:05:42.307 [info] > git status -z -uall [59ms]

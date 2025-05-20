@@ -1,0 +1,3 @@
+nginx/letsencrypt/certbot/conf/live/
+nginx/letsencrypt/certbot/conf/accounts/
+nginx/letsencrypt/certbot/conf/archive/
