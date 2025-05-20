@@ -1,4 +1,0 @@
-Listening on 127.0.0.1:43829
-[2025-05-20 05:40:51] info Disposed of connection to running server.
-[2025-05-20 05:40:55] info Checking /home/azureuser/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/log.txt and /home/azureuser/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/pid.txt for a running server...
-[2025-05-20 05:40:55] info Found running server (pid=61041)
